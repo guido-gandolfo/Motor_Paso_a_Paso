@@ -1,0 +1,30 @@
+|controlador
+Q0 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+nRST => inst6.ACLR
+nRST => inst5.ACLR
+nRST => inst4.ACLR
+MODO => inst31.IN1
+MODO => inst30.IN1
+MODO => inst27.IN1
+MODO => inst28.IN1
+MODO => inst13.IN0
+MODO => inst9.IN1
+MODO => inst20.IN1
+MODO => inst15.IN1
+CLK => inst6.CLK
+CLK => inst5.CLK
+CLK => inst4.CLK
+Q1 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+HORARIO => inst27.IN2
+HORARIO => inst14.IN0
+HORARIO => inst8.IN2
+HORARIO => inst19.IN2
+HORARIO => inst18.IN3
+HORARIO => inst3.IN2
+Q2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Ea <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+Sa <= inst35.DB_MAX_OUTPUT_PORT_TYPE
+Eb <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+Sb <= inst38.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,8 @@
+|FLIPFLOP_JK0
+SALIDA_Q0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+RESET => inst.ACLR
+M => inst5.IN1
+M => inst3.IN1
+CLK => inst.CLK
+
+

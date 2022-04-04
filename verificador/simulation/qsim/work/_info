@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\guido\Desktop\PAP\mp\verificador\simulation\qsim
+vencoder
+Z1 !s100 lin;HObcXHO?fG^QW;dDg0
+Z2 I?9X3?RZj_9^og^=zRo1PC1
+Z3 VbdN8lIcWc=N=@^4cKozN@3
+Z4 dC:\Users\guido\Desktop\PAP\mp\verificador\simulation\qsim
+Z5 w1533581235
+Z6 8encoder.vo
+Z7 Fencoder.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|encoder.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1533581237.362000
+Z12 !s107 encoder.vo|
+!s101 -O0
+vencoder_vlg_check_tst
+!i10b 1
+Z13 !s100 2ejB`cAnB4`lG1m3SfCin3
+Z14 I3UXCfT=oLkNb9l<44<B8[3
+Z15 V^^5M;jZ4gBmLd4M=VUQ^[0
+R4
+Z16 w1533581231
+Z17 8encoder.vt
+Z18 Fencoder.vt
+L0 63
+R8
+r1
+!s85 0
+31
+Z19 !s108 1533581237.861000
+Z20 !s107 encoder.vt|
+Z21 !s90 -work|work|encoder.vt|
+!s101 -O0
+R10
+vencoder_vlg_sample_tst
+!i10b 1
+Z22 !s100 aN=T25N6<7?ISBH:20<a31
+Z23 IG^AGUlndNK]4RGH7VP^NQ2
+Z24 Vma`Sn<aURh<_9^Czf?PcL3
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vencoder_vlg_vec_tst
+!i10b 1
+!s100 E;DgXd`OGFD`L@C9DAY@10
+Iz;ZVL`45DPh[lI@DM_Bo?2
+Z25 VAZkg4`dRYPGhz]]>iORen1
+R4
+R16
+R17
+R18
+Z26 L0 220
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

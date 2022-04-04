@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/glpuga/Dropbox/PROYECTOSFINALES/TF03MOTORPAP/TF03PAP/simulation/qsim
+vCONTROLADOR
+Z1 !s100 dN7gJW8KPWzoY[J`3<1hz0
+Z2 IMH<kOGS[o4W;gQYXHG@Y23
+Z3 VDB4dWPmEIf:iE0IMf7]da1
+Z4 dC:\Users\guido\Desktop\PAP\mp\TF03PAP\simulation\qsim
+Z5 w1533579424
+Z6 8MOTORPAP.vo
+Z7 FMOTORPAP.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|MOTORPAP.vo|
+Z10 o-work work -O0
+Z11 n@c@o@n@t@r@o@l@a@d@o@r
+Z12 !s108 1533579425.770000
+Z13 !s107 MOTORPAP.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vCONTROLADOR_vlg_check_tst
+Z14 !s100 VzLPnQOn:bCX;Oi[Y5Q>P2
+Z15 I]DQd9WZo@A8YLWm7Q5X;F2
+Z16 V?92:mCbDQ2fzZjFKPNlWG3
+R4
+Z17 w1533579420
+Z18 8MOTORPAP.vt
+Z19 FMOTORPAP.vt
+L0 63
+R8
+r1
+31
+Z20 !s108 1533579426.176000
+Z21 !s107 MOTORPAP.vt|
+Z22 !s90 -work|work|MOTORPAP.vt|
+R10
+Z23 n@c@o@n@t@r@o@l@a@d@o@r_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vCONTROLADOR_vlg_sample_tst
+Z24 !s100 >Niib@EnUVfNHn3h8X>6;3
+Z25 I=MdQlP;Q1S18VaQ0;JFc;1
+Z26 VM1oAkKjWiOcYRf?fk`I4M0
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+31
+R20
+R21
+R22
+R10
+Z27 n@c@o@n@t@r@o@l@a@d@o@r_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vCONTROLADOR_vlg_vec_tst
+Z28 InJ^H9^<7mPGHgeXgWlUZn0
+Z29 VV?=NzZZKGWT25=WYXThOg3
+R4
+R17
+R18
+R19
+Z30 L0 239
+R8
+r1
+31
+R20
+R21
+R22
+R10
+Z31 n@c@o@n@t@r@o@l@a@d@o@r_vlg_vec_tst
+Z32 !s100 ]SW]dd7M4mYk:dCoTPZ9f0
+!i10b 1
+!s85 0
+!s101 -O0
+vMOTORPAP
+Z33 !s100 >BLYgB[?J8lUhDObjHhfE3
+Z34 IlbaKH@mbRe6zn?AISlK=[3
+Z35 V6di2eR;0FX9k3OKYN5VcD0
+Z36 dG:\Diseño Logico\MOTOR\TF03PAP\simulation\qsim
+Z37 w1533729420
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z38 n@m@o@t@o@r@p@a@p
+!i10b 1
+!s85 0
+Z39 !s108 1533729426.353000
+R13
+!s101 -O0
+vMOTORPAP_vlg_check_tst
+!i10b 1
+Z40 !s100 hEo;IWDcT9nQ3J39<SakB0
+Z41 IWEoB?oVP@U:hY]9^@nYC43
+Z42 V<P89dJgfFEG8bZN1:nK:=0
+R36
+Z43 w1533729416
+R18
+R19
+L0 63
+R8
+r1
+!s85 0
+31
+Z44 !s108 1533729427.150000
+Z45 !s107 MOTORPAP.vt|
+R22
+!s101 -O0
+R10
+Z46 n@m@o@t@o@r@p@a@p_vlg_check_tst
+vMOTORPAP_vlg_sample_tst
+!i10b 1
+Z47 !s100 2bc0EDQ^HXFN44<C6XNAf1
+Z48 IjTX?Ra02N]RZ`eWaQzABJ2
+Z49 VWF[P8HKJMdX8L5j79YJ`z0
+R36
+R43
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R44
+R45
+R22
+!s101 -O0
+R10
+Z50 n@m@o@t@o@r@p@a@p_vlg_sample_tst
+vMOTORPAP_vlg_vec_tst
+!i10b 1
+Z51 !s100 fMnzojFN`HcQoo;HO9Oa11
+Z52 IS@GK>`b>@PJ4Zo`F02?801
+Z53 V5AC@EIc`TDzf`TH4QzHB>0
+R36
+R43
+R18
+R19
+Z54 L0 282
+R8
+r1
+!s85 0
+31
+R44
+R45
+R22
+!s101 -O0
+R10
+Z55 n@m@o@t@o@r@p@a@p_vlg_vec_tst

@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/guido/Desktop/PAP/mp/CONT/CONTROLADOR.bdf
+source_file = 1, C:/Users/guido/Desktop/PAP/mp/CONT/Waveform.vwf
+source_file = 1, C:/Users/guido/Desktop/PAP/mp/CONT/db/CONTROLADOR.cbx.xml
+design_name = CONTROLADOR
+instance = comp, \SALIDA_Q2~output , SALIDA_Q2~output, CONTROLADOR, 1
+instance = comp, \SALIDA_Q1~output , SALIDA_Q1~output, CONTROLADOR, 1
+instance = comp, \SALIDA_Q0~output , SALIDA_Q0~output, CONTROLADOR, 1
+instance = comp, \CLK~input , CLK~input, CONTROLADOR, 1
+instance = comp, \MODO~input , MODO~input, CONTROLADOR, 1
+instance = comp, \inst3~0 , inst3~0, CONTROLADOR, 1
+instance = comp, \nRST~input , nRST~input, CONTROLADOR, 1
+instance = comp, \HORARIO~input , HORARIO~input, CONTROLADOR, 1
+instance = comp, \inst2~0 , inst2~0, CONTROLADOR, 1
+instance = comp, \inst1~0 , inst1~0, CONTROLADOR, 1
+instance = comp, \inst1~1 , inst1~1, CONTROLADOR, 1

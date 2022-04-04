@@ -1,0 +1,30 @@
+|guido
+Ea <= inst33.DB_MAX_OUTPUT_PORT_TYPE
+pin_name3 <> inst4
+pin_name1 <> inst5
+pin_name2 <> inst6
+Sa <= inst36.DB_MAX_OUTPUT_PORT_TYPE
+Eb <= inst38.DB_MAX_OUTPUT_PORT_TYPE
+Sb <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+nRST => inst5.ACLR
+nRST => inst6.ACLR
+nRST => inst4.ACLR
+MODO => inst27.IN1
+MODO => inst28.IN1
+MODO => inst13.IN0
+MODO => inst9.IN1
+MODO => inst31.IN1
+MODO => inst30.IN1
+MODO => inst20.IN1
+MODO => inst15.IN1
+HORARIO => inst27.IN2
+HORARIO => inst14.IN0
+HORARIO => inst8.IN2
+HORARIO => inst19.IN2
+HORARIO => inst18.IN3
+HORARIO => inst3.IN2
+CLK => inst5.CLK
+CLK => inst6.CLK
+CLK => inst4.CLK
+
+

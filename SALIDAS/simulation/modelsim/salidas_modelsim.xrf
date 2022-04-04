@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/guido/Desktop/PAP/mp/SALIDAS/salidas.bdf
+source_file = 1, C:/Users/guido/Desktop/PAP/mp/SALIDAS/TEST.vwf
+source_file = 1, C:/Users/guido/Desktop/PAP/mp/SALIDAS/db/salidas.cbx.xml
+design_name = salidas
+instance = comp, \Ea~output , Ea~output, salidas, 1
+instance = comp, \Sa~output , Sa~output, salidas, 1
+instance = comp, \Eb~output , Eb~output, salidas, 1
+instance = comp, \Sb~output , Sb~output, salidas, 1
+instance = comp, \Q0~input , Q0~input, salidas, 1
+instance = comp, \Q1~input , Q1~input, salidas, 1
+instance = comp, \Q2~input , Q2~input, salidas, 1

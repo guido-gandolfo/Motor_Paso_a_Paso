@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\guido\Desktop\PAP\mp\CONTROLADOR\simulation\qsim
+vCONTROLADOR_COMPLETO
+Z1 Ij5]O6Ll1ERN0Mk:MUbk9L3
+Z2 VNl9ad^GgmJIgn3B3kCnkH2
+Z3 dC:\Users\guido\Desktop\PAP\mp\CONTROLADOR\simulation\qsim
+Z4 w1533462375
+Z5 8CONTROLADOR_COMPLETO.vo
+Z6 FCONTROLADOR_COMPLETO.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|CONTROLADOR_COMPLETO.vo|
+Z9 o-work work -O0
+Z10 n@c@o@n@t@r@o@l@a@d@o@r_@c@o@m@p@l@e@t@o
+Z11 !s100 ;Z3P3e4OeXb:?^e]QGm1h3
+Z12 !s108 1533462377.572000
+Z13 !s107 CONTROLADOR_COMPLETO.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vCONTROLADOR_COMPLETO_vlg_check_tst
+Z14 !s100 aB]zi^:X90YSJQ77PY3H@2
+Z15 ISbB4X_J4@hU8gS=F6U05C1
+Z16 VH=h<mC<Z23a:zdHkN1a;e3
+R3
+Z17 w1533462371
+Z18 8CONTROLADOR_COMPLETO.vt
+Z19 FCONTROLADOR_COMPLETO.vt
+L0 63
+R7
+r1
+31
+Z20 !s108 1533462377.773000
+Z21 !s107 CONTROLADOR_COMPLETO.vt|
+Z22 !s90 -work|work|CONTROLADOR_COMPLETO.vt|
+R9
+Z23 n@c@o@n@t@r@o@l@a@d@o@r_@c@o@m@p@l@e@t@o_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vCONTROLADOR_COMPLETO_vlg_sample_tst
+Z24 !s100 ddomA[CCUIOLcg:8`idZD3
+Z25 I5<^j>_omjc8_A6iHAZZUg2
+Z26 V1f]UAjX45edmgcOELdO;`3
+R3
+R17
+R18
+R19
+L0 29
+R7
+r1
+31
+R20
+R21
+R22
+R9
+Z27 n@c@o@n@t@r@o@l@a@d@o@r_@c@o@m@p@l@e@t@o_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vCONTROLADOR_COMPLETO_vlg_vec_tst
+Z28 !s100 9]_XQkb^cT8Zo3MN]87]91
+Z29 IKl4:CXMm49eV3e4@mn?IP2
+Z30 V9AMGRMcah6HZf7Xh^M9AS0
+R3
+R17
+R18
+R19
+Z31 L0 320
+R7
+r1
+31
+R20
+R21
+R22
+R9
+Z32 n@c@o@n@t@r@o@l@a@d@o@r_@c@o@m@p@l@e@t@o_vlg_vec_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vPRUEBA
+Z33 !s100 Yo[?XL_ASbHIFBLhJMUCn3
+Z34 I<7O;>:@zWik67A3k[[6]G0
+Z35 V9KNObFj]EBFb4YDhDUlc`0
+R3
+Z36 w1533478196
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z37 n@p@r@u@e@b@a
+!i10b 1
+!s85 0
+Z38 !s108 1533478198.875000
+R13
+!s101 -O0
+vPRUEBA_vlg_check_tst
+!i10b 1
+Z39 !s100 E8m3T40Q7^HK?RV=V5b4:1
+Z40 I5Oljj9Do5zQ>T6=P`Z[;a0
+Z41 V4Ql]9MVjbo]?AAb_6SJLh3
+R3
+Z42 w1533478193
+R18
+R19
+L0 63
+R7
+r1
+!s85 0
+31
+Z43 !s108 1533478199.067000
+Z44 !s107 CONTROLADOR_COMPLETO.vt|
+R22
+!s101 -O0
+R9
+Z45 n@p@r@u@e@b@a_vlg_check_tst
+vPRUEBA_vlg_sample_tst
+!i10b 1
+Z46 !s100 UdK]XPESXQ=I9F4V]U1mA0
+Z47 IW09N<4GiSD[_2ac:z07NP1
+Z48 V@7JbE<AQFAQoPz_Xb=`d61
+R3
+R42
+R18
+R19
+L0 29
+R7
+r1
+!s85 0
+31
+R43
+R44
+R22
+!s101 -O0
+R9
+Z49 n@p@r@u@e@b@a_vlg_sample_tst
+vPRUEBA_vlg_vec_tst
+!i10b 1
+Z50 !s100 GLU@Rh98hfS8g;L48Emjl1
+Z51 IG37Lo9lgH=`no<Yk>3Scz3
+Z52 VNeMD?L0TalL9>ze@I_Cc>2
+R3
+R42
+R18
+R19
+Z53 L0 302
+R7
+r1
+!s85 0
+31
+R43
+R44
+R22
+!s101 -O0
+R9
+Z54 n@p@r@u@e@b@a_vlg_vec_tst

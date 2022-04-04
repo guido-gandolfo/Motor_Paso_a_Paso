@@ -1,0 +1,451 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "06/01/2016 04:03:26"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    MOTORPAP
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module MOTORPAP_vlg_sample_tst(
+	CLK,
+	HORARIO,
+	MODO,
+	nRST,
+	sampler_tx
+);
+input  CLK;
+input  HORARIO;
+input  MODO;
+input  nRST;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(CLK or HORARIO or MODO or nRST)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module MOTORPAP_vlg_check_tst (
+	ERRORPOSICION,
+	INCREMENTO,
+	POSICION,
+	sampler_rx
+);
+input  ERRORPOSICION;
+input [2:0] INCREMENTO;
+input [2:0] POSICION;
+input sampler_rx;
+
+reg  ERRORPOSICION_expected;
+reg [2:0] INCREMENTO_expected;
+reg [2:0] POSICION_expected;
+
+reg  ERRORPOSICION_prev;
+reg [2:0] INCREMENTO_prev;
+reg [2:0] POSICION_prev;
+
+reg  ERRORPOSICION_expected_prev;
+reg [2:0] INCREMENTO_expected_prev;
+reg [2:0] POSICION_expected_prev;
+
+reg  last_ERRORPOSICION_exp;
+reg [2:0] last_INCREMENTO_exp;
+reg [2:0] last_POSICION_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:3] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 3'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	ERRORPOSICION_prev = ERRORPOSICION;
+	INCREMENTO_prev = INCREMENTO;
+	POSICION_prev = POSICION;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	ERRORPOSICION_expected_prev = ERRORPOSICION_expected;
+	INCREMENTO_expected_prev = INCREMENTO_expected;
+	POSICION_expected_prev = POSICION_expected;
+end
+
+
+
+// expected ERRORPOSICION
+initial
+begin
+	ERRORPOSICION_expected = 1'bX;
+end 
+// expected INCREMENTO[ 2 ]
+initial
+begin
+	INCREMENTO_expected[2] = 1'bX;
+end 
+// expected INCREMENTO[ 1 ]
+initial
+begin
+	INCREMENTO_expected[1] = 1'bX;
+end 
+// expected INCREMENTO[ 0 ]
+initial
+begin
+	INCREMENTO_expected[0] = 1'bX;
+end 
+// expected POSICION[ 2 ]
+initial
+begin
+	POSICION_expected[2] = 1'bX;
+end 
+// expected POSICION[ 1 ]
+initial
+begin
+	POSICION_expected[1] = 1'bX;
+end 
+// expected POSICION[ 0 ]
+initial
+begin
+	POSICION_expected[0] = 1'bX;
+end 
+// generate trigger
+always @(ERRORPOSICION_expected or ERRORPOSICION or INCREMENTO_expected or INCREMENTO or POSICION_expected or POSICION)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected ERRORPOSICION = %b | expected INCREMENTO = %b | expected POSICION = %b | ",ERRORPOSICION_expected_prev,INCREMENTO_expected_prev,POSICION_expected_prev);
+	$display("| real ERRORPOSICION = %b | real INCREMENTO = %b | real POSICION = %b | ",ERRORPOSICION_prev,INCREMENTO_prev,POSICION_prev);
+`endif
+	if (
+		( ERRORPOSICION_expected_prev !== 1'bx ) && ( ERRORPOSICION_prev !== ERRORPOSICION_expected_prev )
+		&& ((ERRORPOSICION_expected_prev !== last_ERRORPOSICION_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port ERRORPOSICION :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", ERRORPOSICION_expected_prev);
+		$display ("     Real value = %b", ERRORPOSICION_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_ERRORPOSICION_exp = ERRORPOSICION_expected_prev;
+	end
+	if (
+		( INCREMENTO_expected_prev[0] !== 1'bx ) && ( INCREMENTO_prev[0] !== INCREMENTO_expected_prev[0] )
+		&& ((INCREMENTO_expected_prev[0] !== last_INCREMENTO_exp[0]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port INCREMENTO[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", INCREMENTO_expected_prev);
+		$display ("     Real value = %b", INCREMENTO_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_INCREMENTO_exp[0] = INCREMENTO_expected_prev[0];
+	end
+	if (
+		( INCREMENTO_expected_prev[1] !== 1'bx ) && ( INCREMENTO_prev[1] !== INCREMENTO_expected_prev[1] )
+		&& ((INCREMENTO_expected_prev[1] !== last_INCREMENTO_exp[1]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port INCREMENTO[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", INCREMENTO_expected_prev);
+		$display ("     Real value = %b", INCREMENTO_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_INCREMENTO_exp[1] = INCREMENTO_expected_prev[1];
+	end
+	if (
+		( INCREMENTO_expected_prev[2] !== 1'bx ) && ( INCREMENTO_prev[2] !== INCREMENTO_expected_prev[2] )
+		&& ((INCREMENTO_expected_prev[2] !== last_INCREMENTO_exp[2]) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port INCREMENTO[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", INCREMENTO_expected_prev);
+		$display ("     Real value = %b", INCREMENTO_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_INCREMENTO_exp[2] = INCREMENTO_expected_prev[2];
+	end
+	if (
+		( POSICION_expected_prev[0] !== 1'bx ) && ( POSICION_prev[0] !== POSICION_expected_prev[0] )
+		&& ((POSICION_expected_prev[0] !== last_POSICION_exp[0]) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port POSICION[0] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", POSICION_expected_prev);
+		$display ("     Real value = %b", POSICION_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_POSICION_exp[0] = POSICION_expected_prev[0];
+	end
+	if (
+		( POSICION_expected_prev[1] !== 1'bx ) && ( POSICION_prev[1] !== POSICION_expected_prev[1] )
+		&& ((POSICION_expected_prev[1] !== last_POSICION_exp[1]) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port POSICION[1] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", POSICION_expected_prev);
+		$display ("     Real value = %b", POSICION_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_POSICION_exp[1] = POSICION_expected_prev[1];
+	end
+	if (
+		( POSICION_expected_prev[2] !== 1'bx ) && ( POSICION_prev[2] !== POSICION_expected_prev[2] )
+		&& ((POSICION_expected_prev[2] !== last_POSICION_exp[2]) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port POSICION[2] :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", POSICION_expected_prev);
+		$display ("     Real value = %b", POSICION_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_POSICION_exp[2] = POSICION_expected_prev[2];
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module MOTORPAP_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg CLK;
+reg HORARIO;
+reg MODO;
+reg nRST;
+// wires                                               
+wire ERRORPOSICION;
+wire [2:0] INCREMENTO;
+wire [2:0] POSICION;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+MOTORPAP i1 (
+// port map - connection between master ports and signals/registers   
+	.CLK(CLK),
+	.ERRORPOSICION(ERRORPOSICION),
+	.HORARIO(HORARIO),
+	.INCREMENTO(INCREMENTO),
+	.MODO(MODO),
+	.nRST(nRST),
+	.POSICION(POSICION)
+);
+
+// nRST
+initial
+begin
+	nRST = 1'b1;
+	nRST = #10000 1'b0;
+	nRST = #10000 1'b1;
+end 
+
+// CLK
+initial
+begin
+	CLK = 1'b1;
+	# 80000;
+	repeat(9)
+	begin
+		CLK = 1'b0;
+		CLK = #5000 1'b1;
+		# 5000;
+	end
+	CLK = 1'b0;
+	CLK = #5000 1'b1;
+	CLK = #25000 1'b0;
+	CLK = #5000 1'b1;
+	CLK = #35000 1'b0;
+	CLK = #5000 1'b1;
+	# 5000;
+	repeat(8)
+	begin
+		CLK = 1'b0;
+		CLK = #5000 1'b1;
+		# 5000;
+	end
+	CLK = 1'b0;
+	CLK = #5000 1'b1;
+	CLK = #25000 1'b0;
+	CLK = #5000 1'b1;
+	CLK = #35000 1'b0;
+	CLK = #5000 1'b1;
+	# 5000;
+	repeat(8)
+	begin
+		CLK = 1'b0;
+		CLK = #5000 1'b1;
+		# 5000;
+	end
+	CLK = 1'b0;
+	CLK = #5000 1'b1;
+	CLK = #25000 1'b0;
+	CLK = #5000 1'b1;
+	CLK = #35000 1'b0;
+	CLK = #5000 1'b1;
+	# 5000;
+	repeat(8)
+	begin
+		CLK = 1'b0;
+		CLK = #5000 1'b1;
+		# 5000;
+	end
+	CLK = 1'b0;
+	CLK = #5000 1'b1;
+	# 65000;
+	repeat(9)
+	begin
+		CLK = 1'b0;
+		CLK = #5000 1'b1;
+		# 5000;
+	end
+	CLK = 1'b0;
+	CLK = #5000 1'b1;
+	# 65000;
+	repeat(9)
+	begin
+		CLK = 1'b0;
+		CLK = #5000 1'b1;
+		# 5000;
+	end
+	CLK = 1'b0;
+	CLK = #5000 1'b1;
+end 
+
+// MODO
+initial
+begin
+	MODO = 1'bX;
+	MODO = #80000 1'b0;
+	MODO = #100000 1'bX;
+	MODO = #20000 1'b1;
+	MODO = #10000 1'bX;
+	MODO = #30000 1'b0;
+	MODO = #100000 1'bX;
+	MODO = #20000 1'b1;
+	MODO = #10000 1'bX;
+	MODO = #30000 1'b0;
+	MODO = #100000 1'bX;
+	MODO = #20000 1'b1;
+	MODO = #10000 1'bX;
+	MODO = #30000 1'b0;
+	MODO = #100000 1'bX;
+	MODO = #60000 1'b1;
+	MODO = #100000 1'bX;
+	MODO = #60000 1'b1;
+	MODO = #100000 1'bX;
+end 
+
+// HORARIO
+initial
+begin
+	HORARIO = 1'bX;
+	HORARIO = #80000 1'b0;
+	HORARIO = #100000 1'bX;
+	HORARIO = #20000 1'b1;
+	HORARIO = #10000 1'bX;
+	HORARIO = #30000 1'b0;
+	HORARIO = #100000 1'bX;
+	HORARIO = #20000 1'b1;
+	HORARIO = #10000 1'bX;
+	HORARIO = #30000 1'b1;
+	HORARIO = #100000 1'bX;
+	HORARIO = #20000 1'b1;
+	HORARIO = #10000 1'bX;
+	HORARIO = #30000 1'b1;
+	HORARIO = #100000 1'bX;
+	HORARIO = #60000 1'b0;
+	HORARIO = #100000 1'bX;
+	HORARIO = #60000 1'b1;
+	HORARIO = #100000 1'bX;
+end 
+
+MOTORPAP_vlg_sample_tst tb_sample (
+	.CLK(CLK),
+	.HORARIO(HORARIO),
+	.MODO(MODO),
+	.nRST(nRST),
+	.sampler_tx(sampler)
+);
+
+MOTORPAP_vlg_check_tst tb_out(
+	.ERRORPOSICION(ERRORPOSICION),
+	.INCREMENTO(INCREMENTO),
+	.POSICION(POSICION),
+	.sampler_rx(sampler)
+);
+endmodule
+

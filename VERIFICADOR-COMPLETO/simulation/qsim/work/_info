@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\guido\Desktop\PAP\mp\VERIFICADOR-COMPLETO\simulation\qsim
+vVERIFICADOR
+Z1 !s100 Y3_OnY=AMz4Cl8UA256Ld2
+Z2 I]6mC]PlM2d2?nS]Yid_EQ1
+Z3 VJ@aVUE_3AIhGX;=C6UJO<3
+Z4 dC:\Users\guido\Desktop\PAP\mp\VERIFICADOR-COMPLETO\simulation\qsim
+Z5 w1533494326
+Z6 8VERIFICADOR.vo
+Z7 FVERIFICADOR.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|VERIFICADOR.vo|
+Z10 o-work work -O0
+Z11 n@v@e@r@i@f@i@c@a@d@o@r
+!i10b 1
+!s85 0
+Z12 !s108 1533494327.916000
+Z13 !s107 VERIFICADOR.vo|
+!s101 -O0
+vVERIFICADOR_vlg_check_tst
+!i10b 1
+Z14 !s100 <CA5AaUz`S^[GVeGeBW4:2
+Z15 IlJKQ7OzV@1<nK3nXb6J@c0
+Z16 V@9DTkDjkgVDAP;?>5nW>`1
+R4
+Z17 w1533494322
+Z18 8VERIFICADOR.vt
+Z19 FVERIFICADOR.vt
+L0 67
+R8
+r1
+!s85 0
+31
+Z20 !s108 1533494328.210000
+Z21 !s107 VERIFICADOR.vt|
+Z22 !s90 -work|work|VERIFICADOR.vt|
+!s101 -O0
+R10
+Z23 n@v@e@r@i@f@i@c@a@d@o@r_vlg_check_tst
+vVERIFICADOR_vlg_sample_tst
+!i10b 1
+Z24 !s100 L5ST7YJYKjhHaTBZZ6?_83
+Z25 I:F@kC]bUh03TXiQ6FY3<T2
+Z26 VK2ZTl>ehSL=^T2hz[z4X80
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@v@e@r@i@f@i@c@a@d@o@r_vlg_sample_tst
+vVERIFICADOR_vlg_vec_tst
+!i10b 1
+!s100 AcV6MXkgW^]>ccik3]0Y@3
+IW@5:Q49?5hMnOW6A[4[JV3
+Z28 V8h^k3zjG`=9_k8H;di4]02
+R4
+R17
+R18
+R19
+Z29 L0 296
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@v@e@r@i@f@i@c@a@d@o@r_vlg_vec_tst

@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/guido/Desktop/PAP/mp/JK2/FLIPFLOPJK2.bdf
+source_file = 1, C:/Users/guido/Desktop/PAP/mp/JK2/TEST.vwf
+source_file = 1, C:/Users/guido/Desktop/PAP/mp/JK2/Waveform.vwf
+source_file = 1, C:/Users/guido/Desktop/PAP/mp/JK2/Waveform1.vwf
+source_file = 1, C:/Users/guido/Desktop/PAP/mp/JK2/db/FLIPFLOPJK2.cbx.xml
+design_name = FLIPFLOPJK2
+instance = comp, \Q0~input , Q0~input, FLIPFLOPJK2, 1
+instance = comp, \Q2~output , Q2~output, FLIPFLOPJK2, 1
+instance = comp, \clk~input , clk~input, FLIPFLOPJK2, 1
+instance = comp, \H~input , H~input, FLIPFLOPJK2, 1
+instance = comp, \M~input , M~input, FLIPFLOPJK2, 1
+instance = comp, \Q1~input , Q1~input, FLIPFLOPJK2, 1
+instance = comp, \inst1~0 , inst1~0, FLIPFLOPJK2, 1
+instance = comp, \inst1~1 , inst1~1, FLIPFLOPJK2, 1
+instance = comp, \reset~input , reset~input, FLIPFLOPJK2, 1

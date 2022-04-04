@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Sun Aug 05 14:58:32 2018
+Quartus II 32-bit Version : 13.0.0 Build 156 04/24/2013 SJ Web Edition
+Revision Name : VERIFICADOR
+Top-level Entity Name : VERIFICADOR
+Family : Cyclone IV GX
+Total logic elements : 9
+    Total combinational functions : 9
+    Dedicated logic registers : 3
+Total registers : 3
+Total pins : 13
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0

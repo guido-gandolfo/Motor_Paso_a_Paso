@@ -1,0 +1,176 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 32-bit"
+// VERSION "Version 13.0.0 Build 156 04/24/2013 SJ Web Edition"
+
+// DATE "08/06/2018 10:46:32"
+
+// 
+// Device: Altera EP4CGX15BF14C8 Package FBGA169
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module FLIPFLOP_JK1 (
+	SALIDA_Q1,
+	RESET,
+	Q0,
+	M,
+	H,
+	CLK);
+output 	SALIDA_Q1;
+input 	RESET;
+input 	Q0;
+input 	M;
+input 	H;
+input 	CLK;
+
+// Design Ports Information
+// SALIDA_Q1	=>  Location: PIN_B8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Q0	=>  Location: PIN_A13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// H	=>  Location: PIN_B13,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// M	=>  Location: PIN_C8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// CLK	=>  Location: PIN_B10,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// RESET	=>  Location: PIN_B11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \M~input_o ;
+wire \SALIDA_Q1~output_o ;
+wire \CLK~input_o ;
+wire \Q0~input_o ;
+wire \H~input_o ;
+wire \inst6~0_combout ;
+wire \RESET~input_o ;
+wire \inst6~q ;
+
+
+// Location: IOIBUF_X22_Y31_N8
+cycloneiv_io_ibuf \M~input (
+	.i(M),
+	.ibar(gnd),
+	.o(\M~input_o ));
+// synopsys translate_off
+defparam \M~input .bus_hold = "false";
+defparam \M~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOOBUF_X22_Y31_N2
+cycloneiv_io_obuf \SALIDA_Q1~output (
+	.i(\inst6~q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\SALIDA_Q1~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \SALIDA_Q1~output .bus_hold = "false";
+defparam \SALIDA_Q1~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X24_Y31_N8
+cycloneiv_io_ibuf \CLK~input (
+	.i(CLK),
+	.ibar(gnd),
+	.o(\CLK~input_o ));
+// synopsys translate_off
+defparam \CLK~input .bus_hold = "false";
+defparam \CLK~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X26_Y31_N1
+cycloneiv_io_ibuf \Q0~input (
+	.i(Q0),
+	.ibar(gnd),
+	.o(\Q0~input_o ));
+// synopsys translate_off
+defparam \Q0~input .bus_hold = "false";
+defparam \Q0~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X26_Y31_N8
+cycloneiv_io_ibuf \H~input (
+	.i(H),
+	.ibar(gnd),
+	.o(\H~input_o ));
+// synopsys translate_off
+defparam \H~input .bus_hold = "false";
+defparam \H~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X23_Y30_N16
+cycloneiv_lcell_comb \inst6~0 (
+// Equation(s):
+// \inst6~0_combout  = (\M~input_o  & (\Q0~input_o  $ (\inst6~q  $ (!\H~input_o )))) # (!\M~input_o  & ((\Q0~input_o ) # ((!\inst6~q ))))
+
+	.dataa(\M~input_o ),
+	.datab(\Q0~input_o ),
+	.datac(\inst6~q ),
+	.datad(\H~input_o ),
+	.cin(gnd),
+	.combout(\inst6~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst6~0 .lut_mask = 16'h6DC7;
+defparam \inst6~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X24_Y31_N1
+cycloneiv_io_ibuf \RESET~input (
+	.i(RESET),
+	.ibar(gnd),
+	.o(\RESET~input_o ));
+// synopsys translate_off
+defparam \RESET~input .bus_hold = "false";
+defparam \RESET~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: FF_X23_Y30_N17
+dffeas inst6(
+	.clk(\CLK~input_o ),
+	.d(\inst6~0_combout ),
+	.asdata(vcc),
+	.clrn(\RESET~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst6~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam inst6.is_wysiwyg = "true";
+defparam inst6.power_up = "low";
+// synopsys translate_on
+
+assign SALIDA_Q1 = \SALIDA_Q1~output_o ;
+
+endmodule

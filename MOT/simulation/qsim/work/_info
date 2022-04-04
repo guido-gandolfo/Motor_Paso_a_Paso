@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\guido\Desktop\PAP\mp\MOT\simulation\qsim
+vMOTOR
+Z1 !s100 oj;MfUD^olC;24c0XSSc63
+Z2 IUNLPkzT=85LBb4h>jWo]g3
+Z3 VBC<m_5Ym<Pk[nl<YO`loh1
+Z4 dC:\Users\guido\Desktop\PAP\mp\MOT\simulation\qsim
+Z5 w1533582317
+Z6 8MOTOR.vo
+Z7 FMOTOR.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|MOTOR.vo|
+Z10 o-work work -O0
+Z11 n@m@o@t@o@r
+!i10b 1
+!s85 0
+Z12 !s108 1533582320.474000
+Z13 !s107 MOTOR.vo|
+!s101 -O0
+vMOTOR_vlg_check_tst
+!i10b 1
+Z14 !s100 GE@F<ATULeIV=PIjRFnFA3
+Z15 IDSA^CHb<KEck<fa`^PE^a3
+Z16 VFAiiegIhP2DOIL;1UIY1G0
+R4
+Z17 w1533582313
+Z18 8MOTOR.vt
+Z19 FMOTOR.vt
+L0 63
+R8
+r1
+!s85 0
+31
+Z20 !s108 1533582321.191000
+Z21 !s107 MOTOR.vt|
+Z22 !s90 -work|work|MOTOR.vt|
+!s101 -O0
+R10
+Z23 n@m@o@t@o@r_vlg_check_tst
+vMOTOR_vlg_sample_tst
+!i10b 1
+Z24 !s100 UKLgiWegNNOZzbWeN<azW3
+Z25 IZ4MRgbh16><QagXSGh55m3
+Z26 VPkFejaAZVe9bGYPP:fgkS3
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@m@o@t@o@r_vlg_sample_tst
+vMOTOR_vlg_vec_tst
+!i10b 1
+!s100 ogI@L5iXcNb6H4>f3<hn`1
+I5Im4PFV;m1l^gY=5FkXc=2
+Z28 VS15`Co>]_^A@`KQTJFS@P3
+R4
+R17
+R18
+R19
+Z29 L0 328
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@m@o@t@o@r_vlg_vec_tst

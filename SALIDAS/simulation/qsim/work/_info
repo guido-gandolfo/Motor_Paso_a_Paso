@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\guido\Desktop\PAP\mp\SALIDAS\simulation\qsim
+vsalidas
+Z1 !s100 B`YH68FzjTKBXelW=l5Ch0
+Z2 IWLK``LozT?HkGnZ5HJSTK0
+Z3 V4Pm53<<JH_@ReVme_goKc0
+Z4 dC:\Users\guido\Desktop\PAP\mp\SALIDAS\simulation\qsim
+Z5 w1533390642
+Z6 8salidas.vo
+Z7 Fsalidas.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|salidas.vo|
+Z10 o-work work -O0
+!i10b 1
+!s85 0
+Z11 !s108 1533390643.602000
+Z12 !s107 salidas.vo|
+!s101 -O0
+vsalidas_vlg_check_tst
+!i10b 1
+Z13 !s100 Bjbo3LU`5ZLbQS=eOa4M91
+Z14 InME0`L[Z48KI4907cBf[Q2
+Z15 VGN=<PTn^5nIoi@k`2V;8n1
+R4
+Z16 w1533390640
+Z17 8salidas.vt
+Z18 Fsalidas.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z19 !s108 1533390643.781000
+Z20 !s107 salidas.vt|
+Z21 !s90 -work|work|salidas.vt|
+!s101 -O0
+R10
+vsalidas_vlg_sample_tst
+!i10b 1
+Z22 !s100 VIBB_j[cTBHk_@lDbg?zX0
+Z23 I]5DVFdNlF;PG8WXWEBW6c3
+Z24 VCnfJhHF9GZ<zY6aE02>nP3
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10
+vsalidas_vlg_vec_tst
+!i10b 1
+!s100 ?MPFZh076@HGd0@[nQef?2
+IZC>`]oaBmL>@R]VCQcB`R1
+Z25 VLT<ho9I2dcP4V`3LO5d7e1
+R4
+R16
+R17
+R18
+Z26 L0 237
+R8
+r1
+!s85 0
+31
+R19
+R20
+R21
+!s101 -O0
+R10

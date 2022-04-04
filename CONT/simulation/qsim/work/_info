@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\guido\Desktop\PAP\mp\CONT\simulation\qsim
+vCONTROLADOR
+Z1 IHe@G4_X8M85RcP@>25iG>2
+Z2 V7PZDeeClYdhL73=`kbnFW1
+Z3 dC:\Users\guido\Desktop\PAP\mp\CONT\simulation\qsim
+Z4 w1533601931
+Z5 8CONTROLADOR.vo
+Z6 FCONTROLADOR.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|CONTROLADOR.vo|
+Z9 o-work work -O0
+Z10 n@c@o@n@t@r@o@l@a@d@o@r
+!i10b 1
+Z11 !s100 cNd_jU5CG]_bTUX=bBXVc3
+!s85 0
+Z12 !s108 1533601934.042000
+Z13 !s107 CONTROLADOR.vo|
+!s101 -O0
+vCONTROLADOR_vlg_check_tst
+!i10b 1
+Z14 !s100 zESFAkS8;@ljdDI<^2HF[3
+Z15 I9LDl`U51<=6BRTP5iFlY83
+Z16 V1[TKJ2Xe@JA4:NW]Z?doN1
+R3
+Z17 w1533601928
+Z18 8CONTROLADOR.vt
+Z19 FCONTROLADOR.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z20 !s108 1533601934.328000
+Z21 !s107 CONTROLADOR.vt|
+Z22 !s90 -work|work|CONTROLADOR.vt|
+!s101 -O0
+R9
+Z23 n@c@o@n@t@r@o@l@a@d@o@r_vlg_check_tst
+vCONTROLADOR_vlg_sample_tst
+!i10b 1
+Z24 !s100 NEGAmYP6A:CoWH_d6Vmz`3
+Z25 Ig8FX=@g=eY0J<ecUV>@OB0
+Z26 VM1oAkKjWiOcYRf?fk`I4M0
+R3
+R17
+R18
+R19
+L0 29
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z27 n@c@o@n@t@r@o@l@a@d@o@r_vlg_sample_tst
+vCONTROLADOR_vlg_vec_tst
+!i10b 1
+Z28 !s100 EF19ijzGRZ[32=3H_^LDz0
+Z29 IMK]mNPz;M<kEG;jW1h5:Z2
+Z30 VV?=NzZZKGWT25=WYXThOg3
+R3
+R17
+R18
+R19
+Z31 L0 212
+R7
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R9
+Z32 n@c@o@n@t@r@o@l@a@d@o@r_vlg_vec_tst

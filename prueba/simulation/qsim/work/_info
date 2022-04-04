@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\guido\Desktop\PAP\mp\prueba\simulation\qsim
+vcontrolador
+Z1 IIOfPoEERnn[D3QQZEj2JV0
+Z2 VgfVF36RQ85^ziOHWQI4Lk3
+Z3 dC:\Users\guido\Desktop\PAP\mp\prueba\simulation\qsim
+Z4 w1533387384
+Z5 8controlador.vo
+Z6 Fcontrolador.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|controlador.vo|
+Z9 o-work work -O0
+!i10b 1
+Z10 !s100 ^iCiAiCVUcKm?@16Bb4K11
+!s85 0
+Z11 !s108 1533387390.231000
+Z12 !s107 controlador.vo|
+!s101 -O0
+vcontrolador_vlg_check_tst
+!i10b 1
+!s100 Dj]7dEjUmRh@TDLE7k[3H1
+IhRaF^nd8iJjnCM>?AUUkI0
+VgCo>?_FJ]EkT<3<NMQMkY1
+R3
+Z13 w1533387382
+Z14 8controlador.vt
+Z15 Fcontrolador.vt
+L0 63
+R7
+r1
+!s85 0
+31
+Z16 !s108 1533387390.829000
+Z17 !s107 controlador.vt|
+Z18 !s90 -work|work|controlador.vt|
+!s101 -O0
+R9
+vcontrolador_vlg_sample_tst
+!i10b 1
+Z19 !s100 K2JUM_Nhf67B`To8DMMT?3
+Z20 IA0VZYdWKDJC9M:hjeQ`>a3
+Z21 Ve35STfAAd@0j[4M<5CA^21
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R9
+vcontrolador_vlg_vec_tst
+!i10b 1
+!s100 4SoD4Vld_YSAf>2RH1SmQ3
+IamCU8o_5FzRJY6=BEcQOm2
+Z22 VV]^Uo1L`J8e@nG1Lj`G?G1
+R3
+R13
+R14
+R15
+L0 320
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R9

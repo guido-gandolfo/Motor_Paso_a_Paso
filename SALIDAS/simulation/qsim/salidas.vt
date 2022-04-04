@@ -1,0 +1,296 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "08/04/2018 10:50:40"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    salidas
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module salidas_vlg_sample_tst(
+	Q0,
+	Q1,
+	Q2,
+	sampler_tx
+);
+input  Q0;
+input  Q1;
+input  Q2;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(Q0 or Q1 or Q2)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+	if ($realtime == 0 || $realtime != current_time)  
+	begin									          
+		if (sample === 1'bx)                          
+			sample = 0;                               
+		else                                          
+			sample = ~sample;                         
+	end										          
+	current_time = $realtime;					      
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module salidas_vlg_check_tst (
+	Ea,
+	Eb,
+	Sa,
+	Sb,
+	sampler_rx
+);
+input  Ea;
+input  Eb;
+input  Sa;
+input  Sb;
+input sampler_rx;
+
+reg  Ea_expected;
+reg  Eb_expected;
+reg  Sa_expected;
+reg  Sb_expected;
+
+reg  Ea_prev;
+reg  Eb_prev;
+reg  Sa_prev;
+reg  Sb_prev;
+
+reg  Ea_expected_prev;
+reg  Eb_expected_prev;
+reg  Sa_expected_prev;
+reg  Sb_expected_prev;
+
+reg  last_Ea_exp;
+reg  last_Eb_exp;
+reg  last_Sa_exp;
+reg  last_Sb_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:4] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 4'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	Ea_prev = Ea;
+	Eb_prev = Eb;
+	Sa_prev = Sa;
+	Sb_prev = Sb;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	Ea_expected_prev = Ea_expected;
+	Eb_expected_prev = Eb_expected;
+	Sa_expected_prev = Sa_expected;
+	Sb_expected_prev = Sb_expected;
+end
+
+
+
+// expected Ea
+initial
+begin
+	Ea_expected = 1'bX;
+end 
+
+// expected Sa
+initial
+begin
+	Sa_expected = 1'bX;
+end 
+
+// expected Eb
+initial
+begin
+	Eb_expected = 1'bX;
+end 
+
+// expected Sb
+initial
+begin
+	Sb_expected = 1'bX;
+end 
+// generate trigger
+always @(Ea_expected or Ea or Eb_expected or Eb or Sa_expected or Sa or Sb_expected or Sb)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected Ea = %b | expected Eb = %b | expected Sa = %b | expected Sb = %b | ",Ea_expected_prev,Eb_expected_prev,Sa_expected_prev,Sb_expected_prev);
+	$display("| real Ea = %b | real Eb = %b | real Sa = %b | real Sb = %b | ",Ea_prev,Eb_prev,Sa_prev,Sb_prev);
+`endif
+	if (
+		( Ea_expected_prev !== 1'bx ) && ( Ea_prev !== Ea_expected_prev )
+		&& ((Ea_expected_prev !== last_Ea_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Ea :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Ea_expected_prev);
+		$display ("     Real value = %b", Ea_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_Ea_exp = Ea_expected_prev;
+	end
+	if (
+		( Eb_expected_prev !== 1'bx ) && ( Eb_prev !== Eb_expected_prev )
+		&& ((Eb_expected_prev !== last_Eb_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Eb :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Eb_expected_prev);
+		$display ("     Real value = %b", Eb_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_Eb_exp = Eb_expected_prev;
+	end
+	if (
+		( Sa_expected_prev !== 1'bx ) && ( Sa_prev !== Sa_expected_prev )
+		&& ((Sa_expected_prev !== last_Sa_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Sa :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Sa_expected_prev);
+		$display ("     Real value = %b", Sa_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_Sa_exp = Sa_expected_prev;
+	end
+	if (
+		( Sb_expected_prev !== 1'bx ) && ( Sb_prev !== Sb_expected_prev )
+		&& ((Sb_expected_prev !== last_Sb_exp) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port Sb :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", Sb_expected_prev);
+		$display ("     Real value = %b", Sb_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_Sb_exp = Sb_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module salidas_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg Q0;
+reg Q1;
+reg Q2;
+// wires                                               
+wire Ea;
+wire Eb;
+wire Sa;
+wire Sb;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+salidas i1 (
+// port map - connection between master ports and signals/registers   
+	.Ea(Ea),
+	.Eb(Eb),
+	.Q0(Q0),
+	.Q1(Q1),
+	.Q2(Q2),
+	.Sa(Sa),
+	.Sb(Sb)
+);
+
+// Q2
+initial
+begin
+	Q2 = 1'b1;
+end 
+
+// Q1
+initial
+begin
+	Q1 = 1'b0;
+end 
+
+// Q0
+initial
+begin
+	Q0 = 1'b0;
+end 
+
+salidas_vlg_sample_tst tb_sample (
+	.Q0(Q0),
+	.Q1(Q1),
+	.Q2(Q2),
+	.sampler_tx(sampler)
+);
+
+salidas_vlg_check_tst tb_out(
+	.Ea(Ea),
+	.Eb(Eb),
+	.Sa(Sa),
+	.Sb(Sb),
+	.sampler_rx(sampler)
+);
+endmodule
+
